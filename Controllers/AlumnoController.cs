@@ -8,19 +8,24 @@ namespace AspNetCore.Controllers
 {
     public class AlumnoController : Controller
     {
+        private EscuelaContext _context;
 
-public IActionResult Index(){
-    return View(
-        new Alumno{Nombre="Misael JG.",
-                       UniqueId = Guid.NewGuid().ToString()});
-}
+        public AlumnoController(EscuelaContext context)
+        {
+            this._context = context;
+        }
+        public IActionResult Index()
+        {
+            return View(_context.Alumnos.FirstOrDefault());
+        }
 
         public IActionResult MultiAlumno()
         {
-            var listaAlumnos = GenerarAlumnosAlAzar(100);
+           // var listaAlumnos = GenerarAlumnosAlAzar(100);
+            var listaAlumnos = _context.Alumnos.ToList();
             // ViewBag.Datox = "La monja";
             ViewBag.Fecha = DateTime.Now;
-            return View("MultiAlumno",listaAlumnos);
+            return View("MultiAlumno", listaAlumnos);
         }
 
         private List<Alumno> GenerarAlumnosAlAzar(int cantidad)
@@ -32,11 +37,13 @@ public IActionResult Index(){
             var listaAlumnos = from n1 in nombre1
                                from n2 in nombre2
                                from a1 in apellido1
-                               select new Alumno { Nombre = $"{n1} {n2} {a1}" ,
-                                UniqueId = Guid.NewGuid().ToString()
+                               select new Alumno
+                               {
+                                   Nombre = $"{n1} {n2} {a1}",
+                                   Id = Guid.NewGuid().ToString()
                                };
 
-            return listaAlumnos.OrderBy((al) => al.UniqueId).Take(cantidad).ToList();
+            return listaAlumnos.OrderBy((al) => al.Id).Take(cantidad).ToList();
         }
 
     }
