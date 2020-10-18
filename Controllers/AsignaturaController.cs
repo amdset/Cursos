@@ -14,9 +14,16 @@ namespace AspNetCore.Controllers
         {
             this._context = context;
         }
-        public IActionResult Index()
+
+        //public IActionResult Index(string id)
+        [Route("Asignatura/Index")]
+        [Route("Asignatura/Index/{asignaturaId}/{apiKey}")]
+        public IActionResult Index(string asignaturaId, string apiKey)
         {
-            return View(_context.Asignaturas.FirstOrDefault());
+            var asignatura = string.IsNullOrEmpty(asignaturaId)
+                ? _context.Asignaturas.FirstOrDefault()
+                : _context.Asignaturas.FirstOrDefault(a => a.Id.Equals(asignaturaId));
+            return View(asignatura);
         }
 
         public IActionResult MultiAsignatura()

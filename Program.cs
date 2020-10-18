@@ -24,7 +24,7 @@ namespace AspNetCore
                 try
                 {
                     var context = services.GetRequiredService<EscuelaContext>();
-                    context.Database.EnsureCreated();
+                    context.Database.EnsureCreatedAsync();
                 }
                 catch (Exception e)
                 {
