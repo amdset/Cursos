@@ -40,3 +40,7 @@ D:\Proyectos\Platzi\Cursos\Netcore\AspNetCore\obj\Debug\netcoreapp3.1\Razor\View
 D:\Proyectos\Platzi\Cursos\Netcore\AspNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ObjetoEscuelaSimple.cshtml.g.cs
 D:\Proyectos\Platzi\Cursos\Netcore\AspNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Alumno\Index.cshtml.g.cs
 D:\Proyectos\Platzi\Cursos\Netcore\AspNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Alumno\MultiAlumno.cshtml.g.cs
+D:\Proyectos\Platzi\Cursos\Netcore\AspNetCore\bin\Debug\netcoreapp3.1\.eslintrc.json
+D:\Proyectos\Platzi\Cursos\Netcore\AspNetCore\bin\Debug\netcoreapp3.1\package-lock.json
+D:\Proyectos\Platzi\Cursos\Netcore\AspNetCore\bin\Debug\netcoreapp3.1\package.json
+D:\Proyectos\Platzi\Cursos\Netcore\AspNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\LstObjetosEscuela.cshtml.g.cs
