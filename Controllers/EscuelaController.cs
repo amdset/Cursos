@@ -14,7 +14,7 @@ namespace AspNetCore.Controllers
         }
         public IActionResult Index()
         {
-            ViewBag.Datox = "La monja";
+            ViewBag.Datox = "!Nunca pares de aprender!";
             var escuela = _context.Escuelas.FirstOrDefault();
             return View(escuela);
         }        

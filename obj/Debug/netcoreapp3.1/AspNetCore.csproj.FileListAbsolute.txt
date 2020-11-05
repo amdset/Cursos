@@ -84,3 +84,7 @@ D:\Proyectos\Platzi\Cursos\Netcore\AspNetCore\bin\Debug\netcoreapp3.1\runtimes\w
 D:\Proyectos\Platzi\Cursos\Netcore\AspNetCore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Proyectos\Platzi\Cursos\Netcore\AspNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Proyectos\Platzi\Cursos\Netcore\AspNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Proyectos\Platzi\Cursos\Netcore\AspNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Curso\Index.cshtml.g.cs
+D:\Proyectos\Platzi\Cursos\Netcore\AspNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Curso\MultiCurso.cshtml.g.cs
+D:\Proyectos\Platzi\Cursos\Netcore\AspNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Curso\Create.cshtml.g.cs
+D:\Proyectos\Platzi\Cursos\Netcore\AspNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Curso\Update.cshtml.g.cs

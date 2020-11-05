@@ -1,15 +1,15 @@
 ﻿@model List<Alumno>
 @{
     ViewData["Title"] = "Información de Alumnos";
-    Layout="Simple";
+    Layout = "Simple";
 }
 
 <div class="text-center">
     <strong>Desde la vista normal</strong>
     <h1 class="display-4">@ViewData["Title"]</h1>
- 
-<strong>Desde la vista parcial</strong>
-<partial name="LstObjetosEscuela"> 
+
+    <strong>Desde la vista parcial</strong>
+        <partial name="LstObjetosEscuela">
 
 </div>
 <p> @ViewBag.Fecha </p>
